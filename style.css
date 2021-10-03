@@ -190,6 +190,7 @@ footer i {padding-right: 10px;width: 14px;}
 .headerNav{
     text-align: center;
     padding: 6px 0 6px;
+    box-shadow: 0 0 20px #000000;
 }
 .headerNav i {
     float:left;
@@ -208,7 +209,7 @@ footer i {padding-right: 10px;width: 14px;}
 .restaurantsName{
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     margin-top: -50px;
     padding: 30px 10px 0px;
@@ -224,6 +225,18 @@ footer i {padding-right: 10px;width: 14px;}
     align-self:center;
     font-size: 26px;
     margin:10px
+}
+.menusPage{padding-bottom: 30px;}
+.menusPage h3{
+    line-height: 16px;
+    word-wrap: break-word;
+}
+.menusPage p{
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calc(80%);
 }
 .entrées h2{
     margin-bottom: -10px;
@@ -269,6 +282,7 @@ footer i {padding-right: 10px;width: 14px;}
 }
 .platCard strong{
     float:right;
+    position: relative;
     margin:-25px 20px 0 0;
 }
 .desserts h2{
@@ -281,7 +295,7 @@ footer i {padding-right: 10px;width: 14px;}
     display: flex;
     gap:20px;
     flex-flow: column;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .dessertsCard{
     margin: 0 10px;
@@ -295,9 +309,11 @@ footer i {padding-right: 10px;width: 14px;}
     float:right;
     margin:-25px 20px 0 0;
 }
+.commanderButton{
+    display: flex;
+    justify-content: center;
+}
 .commander{
-    align-self:center;
-    width: 180px;
     height: 50px;
     border-radius: 25px;
     border:none;
@@ -307,4 +323,16 @@ footer i {padding-right: 10px;width: 14px;}
     font-size: 16px;
     font-family: RobotoMed;
     cursor: pointer !important;
+    width: 65%;
+}
+@media (min-width:950px){
+    .menusPage{
+        display: grid;
+        grid-template-rows: repeat(4,1r);
+        grid-template-columns: repeat(3,auto);
+    }
+    .restaurantsName{grid-area: 1 / 1 / 2 / 4;}
+    .commanderButton{grid-area:3 / 2 / 4 / 3 ;} 
+    .commander{width: 90%}
+    .restaurantsName{justify-content: space-evenly;}
 }
