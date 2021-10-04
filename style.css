@@ -142,7 +142,7 @@ body :hover{cursor:default}
 .restaurants h2{font-size: 24px; margin-left: 20px;}
 .restaurantsCards{
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
     gap:30px
 }
 .restaurantCard{
@@ -169,6 +169,24 @@ body :hover{cursor:default}
 .restaurantCardImgHold{
     position:relative;
 }
+.restaurantNew {
+    position:relative;
+    background-color:#99E2D0;
+    color:#0A8D6D;
+    border-radius:3px;
+    z-index: 1001;
+    float: right;
+    margin-left: -80px;
+    right: 40px;
+    top:20px;
+    height:30px;
+    width: 80px;
+    text-align: center;
+    line-height:0px
+    }
+.restaurantCard3 .restaurantNew{opacity:0}
+.restaurantCard4 .restaurantNew{opacity:0}
+
 .restaurantCardTxt h3{grid-area:1/1/2/5}
 .restaurantCardTxt p {grid-area:2/1/3/4}
 .restaurantCardTxt button{
@@ -354,7 +372,7 @@ u{
 .platCard:nth-of-type(2){animation: CardPopUp 2s Linear 1 3s ;}
 .platCard:nth-of-type(3){animation: CardPopUp 3s Linear 1 3s ;}
 .platCard:nth-of-type(4){animation: CardPopUp 4s Linear 1 3s ;}
-.dessertsCard :nth-of-type(1){animation: CardPopUp 1s linear 1 3s ;}
+.dessertsCard:nth-of-type(1){animation: CardPopUp 1s linear 1 3s ;}
 .dessertsCard:nth-of-type(2){animation: CardPopUp 2s Linear 1 3s ;}
 .dessertsCard:nth-of-type(3){animation: CardPopUp 3s Linear 1 3s ;}
 .dessertsCard:nth-of-type(4){animation: CardPopUp 4s Linear 1 3s ;}
@@ -372,7 +390,7 @@ u{
     opacity: 0;
     height: 0%;
     width: 0%;
-    z-index: 1001;
+    z-index: 1002;
     background-color: #F6F6F6;
     animation: LoadingPageVisibility 4s ease-in 0s 1;
 }
