@@ -108,3 +108,8 @@
      grid-area:1/2/2/3;
      &full{grid-area:1/2/2/3}
 }
+u {
+    text-decoration: none;
+    border-bottom: 3px solid $tiercary-color;
+    padding-bottom: 4px;
+  }

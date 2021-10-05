@@ -67,6 +67,11 @@
     text-align: center;
     line-height: 30px;
 }
+.restaurantCard3,.restaurantCard4 {
+    .restaurantNew{
+        opacity: 0;
+    }
+}
 @media (min-width:950px){
     .restaurantsCards{
         display:grid;

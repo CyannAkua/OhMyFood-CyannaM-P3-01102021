@@ -535,6 +535,10 @@ footer svg {
   line-height: 30px;
 }
 
+.restaurantCard3 .restaurantNew, .restaurantCard4 .restaurantNew {
+  opacity: 0;
+}
+
 @media (min-width: 950px) {
   .restaurantsCards {
     display: -ms-grid;
@@ -786,5 +790,11 @@ footer svg {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1/2/2/3;
+}
+
+u {
+  text-decoration: none;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
 }
 /*# sourceMappingURL=style.css.map */
