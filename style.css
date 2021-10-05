@@ -32,6 +32,11 @@ body :active{text-decoration: none;}
 body :visited{text-decoration: none;}
 body :link{text-decoration: none;}
 body :hover{cursor:default}
+
+
+
+
+
 .HeaderLogo{
     text-align:center; 
     padding: 6px 0 6px;}
