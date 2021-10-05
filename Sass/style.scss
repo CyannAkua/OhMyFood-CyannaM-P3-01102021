@@ -1,7 +1,13 @@
 @import "./utils/variable";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./layouts/header";
+@import "./layouts/loading"ignore;
+@import "./layouts/checkBox";
+@import "./layouts/cardAnim";
+@import "./layouts/headerIndex";
+@import "./layouts/headerMenu";
 @import "./layouts/footer";
+@import "./components/heartButton";
 @import "./pages/indexFonctionnement";
 @import "./pages/indexRestaurants";
+@import "./pages/menu";

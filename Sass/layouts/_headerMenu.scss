@@ -1,0 +1,21 @@
+.header{
+    &Nav{
+        text-align:center;
+        padding: 6px 0 6px;
+        svg{
+            float: left;
+            font-size: 26px;
+            padding: 6px 0 0 30px;
+            margin-right: -55px;
+            color: $darkgrey;
+            cursor: pointer; 
+        }
+    }
+    &Pic{
+        object-fit: cover;
+        min-height: 50px;
+        max-height: 400px;
+        width: 100%;
+        position: relative; 
+    }
+}

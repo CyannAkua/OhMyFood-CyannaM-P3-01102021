@@ -2,7 +2,7 @@
 @include font-import(Roboto, '../font/Roboto-Thin.ttf', 300);
 @include font-import(Roboto, '../font/Roboto-Bold.ttf', bold);
 @include font-import(RobotoMed, '../font/Roboto-Medium.ttf', 500);
-@include font-import(Shrikhand, '../font/Shrikhand-Regular.tff', normal);
+@include font-import(Shrikhand, '../font/Shrikhand-Regular.ttf', normal);
 *{
     margin: 0;
     font-family: Roboto, Shrikhand, sans-serif;
