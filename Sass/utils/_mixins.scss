@@ -1,0 +1,23 @@
+@mixin font-import($family, $source, $weight){
+    @font-face {
+        font-family:$family;
+        src: url($source);
+        font-weight: $weight;
+    }
+}
+@mixin full-center {
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin grad-button($height,$width){
+    width:$height;
+    height:$width;
+    border-radius: 25px;
+    border:none;
+    color:white;
+    background:linear-gradient(0deg,$primary-color, $secondary-color);
+    box-shadow:0px 3px 5px 0 #00000050;
+}

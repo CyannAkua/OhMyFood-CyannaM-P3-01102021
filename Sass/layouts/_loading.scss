@@ -1,0 +1,49 @@
+.LoadingPage {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+    z-index: 1002;
+    background-color: #f6f6f6;
+    animation: LoadingPageVisibility 4s ease-in 0s 1;
+  }
+  @keyframes LoadingPageVisibility {
+    0% {
+      opacity: 1;
+      height: 100%;
+      width: 100%;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .LoadingLogo {
+    display: block;
+    position: fixed;
+    height: 0px;
+    width: 0px;
+    border: 20px solid #9356dc;
+    border-right: 20px solid transparent;
+    border-radius: 50%;
+    animation: LoadingLogoAnim 1.5s ease-in-out 0s 3;
+  }
+  @keyframes LoadingLogoAnim {
+    from {
+      transform: rotate(0deg);
+      height: 100px;
+      width: 100px;
+    }
+    to {
+      transform: rotate(360deg);
+      height: 100px;
+      width: 100px;
+    }
+  }

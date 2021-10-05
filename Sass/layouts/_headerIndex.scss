@@ -1,0 +1,44 @@
+.HeaderLogo{
+    text-align:center; 
+    padding: 6px 0 6px;}
+.CitySearch{
+    display: flex;
+    padding: 0 10px 0;
+    flex-flow: wrap row;
+    @include full-center;
+    background-color:#EAEAEA;
+    height: 60px;
+    box-shadow: inset 0px 3px 3px #CECECE;
+
+    svg{
+        color:$darkgrey;
+        height: 18px;
+        margin-right: -20px;
+        @include full-center;
+
+    }
+    input{
+        background-color: transparent;
+        border:none;
+        @include full-center;
+        font-family: RobotoMed;
+        color:$darkgrey;
+        height: 18px;
+        font-size: 18px;
+    }
+}
+.HeaderText{
+    background-color: #F6F6F6;
+    flex-direction:column;
+    padding:40px 40px 40px;
+    @include full-center;
+    h1{font-size:24px;}
+    p{font-size:18px;
+      font-weight:300;
+      padding:13px 0 26px;}
+    button{
+        @include grad-button(240px,50px);
+        font-size: 16px;
+        margin-bottom: 14px;
+        }
+}

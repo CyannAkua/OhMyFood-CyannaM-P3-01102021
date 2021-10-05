@@ -1,0 +1,115 @@
+  .restaurant{
+    &Name{
+        font-family:Shrikhand;
+        margin: 10px;
+    }
+    &sName {
+        display: grid;
+        grid-template-columns: auto 30px;
+        align-content: center;
+        justify-content: space-around;
+        position: relative;
+        margin-top: -50px;
+        padding: 30px 10px 0px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background: white;
+        i{
+            align-self: center;
+            height: 30px;
+            width:30;
+            margin:10px;
+        }
+    }
+  } 
+  .menusPage{
+      padding-bottom:30px;
+      h3{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width:100%;
+          margin-block-start: 0;
+          margin-block-end: 0;
+      }
+      p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width:80%;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    article{
+        display:grid;
+        overflow: hidden;
+        grid-template-columns: repeat(10, 1fr) auto;
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 10px;
+        padding: 0 10px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow:$shadow;
+        height: 90px;
+        align-items: center;
+        h3{
+            grid-area: 1/1/2/11;
+        }
+        p{
+            grid-area: 2/1/3/10;
+        }
+        strong{
+            grid-area:2/10/3/11;
+            justify-self: right;
+        }
+    }
+  }
+  .entrées, .plats, .desserts {
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    h2 {
+        margin-bottom: -10px;
+        padding: 20px 0 8px 10px;
+        font-weight: lighter;
+        font-size: 18px;
+      }
+}
+.desserts{padding-bottom: 30px;}
+.commander {
+    @include grad-button(25px,50px);
+    font-size: 16px;
+    font-family: RobotoMed;
+    cursor: pointer !important;
+    width: 65%;
+    &Button {
+        display:flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 950px) {
+    .menusPage {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(3, 1fr);}
+    .restaurant{
+        &Name {grid-column: 1/3;}
+        &sName{
+            grid-area: 1 / 1 / 2 / 4; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center; 
+        }
+    }
+    .commanderButton{grid-area:3/2/4/3}
+}
+.restaurantsName .heart{
+     @include heart(26px !important);
+     grid-area:1/2/2/3;
+     &full{grid-area:1/2/2/3}
+}
+u {
+    text-decoration: none;
+    border-bottom: 3px solid $tiercary-color;
+    padding-bottom: 4px;
+  }

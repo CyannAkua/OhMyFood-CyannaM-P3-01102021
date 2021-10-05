@@ -1,0 +1,19 @@
+.entréeCard:nth-of-type(1),.platCard:nth-of-type(1),.dessertsCard:nth-of-type(1){
+    animation: CardPopUp 2s linear 1 3s;
+}
+.entréeCard:nth-of-type(2),.platCard:nth-of-type(2),.dessertsCard:nth-of-type(2){
+    animation: CardPopUp 3s linear 1 3s;
+}
+.entréeCard:nth-of-type(3),.platCard:nth-of-type(3),.dessertsCard:nth-of-type(3){
+    animation: CardPopUp 4s linear 1 3s;
+}
+.entréeCard:nth-of-type(4),.platCard:nth-of-type(4),.dessertsCard:nth-of-type(4){
+    animation: CardPopUp 5s linear 1 3s;
+}
+@keyframes CardPopUp {
+    from {
+      opacity: 0;
+      margin-top: 20px;
+    }
+  }
+  
