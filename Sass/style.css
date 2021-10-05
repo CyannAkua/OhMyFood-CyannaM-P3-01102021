@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Thin.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: RobotoMed;
+  src: url("../font/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url("../font/Shrikhand-Regular.tff");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Shrikhand, sans-serif;
+  text-decoration: none;
+}
+
+body:active {
+  text-decoration: none;
+}
+
+body:visited {
+  text-decoration: none;
+}
+
+body:link {
+  text-decoration: none;
+}
+
+body:hover {
+  cursor: default;
+}
+/*# sourceMappingURL=style.css.map */
