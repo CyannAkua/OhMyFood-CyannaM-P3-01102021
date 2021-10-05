@@ -448,8 +448,8 @@ footer svg {
   -webkit-clip-path: url(#HeartEmpty);
           clip-path: url(#HeartEmpty);
   background: black;
-  height: 24px;
-  width: 24px;
+  height: 24px !important;
+  width: 24px !important;
   -webkit-clip-path: url(#HeartFill);
           clip-path: url(#HeartFill);
   background: none;
@@ -460,8 +460,8 @@ footer svg {
           clip-path: url(#HeartEmpty);
   background: black;
   opacity: 1;
-  height: 24px;
-  width: 24px;
+  height: 24px !important;
+  width: 24px !important;
 }
 
 .restaurantCardTxt .heart .filling {
@@ -469,9 +469,9 @@ footer svg {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-clip-path: url(#HeartFill);
           clip-path: url(#HeartFill);
-  height: 24px;
-  width: 24px;
-  margin-top: 24px;
+  height: 24px !important;
+  width: 24px !important;
+  margin-top: 24px !important;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -483,8 +483,8 @@ footer svg {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-clip-path: url(#HeartFill);
           clip-path: url(#HeartFill);
-  height: 24px;
-  width: 24px;
+  height: 24px !important;
+  width: 24px !important;
   margin-top: 0 !important;
 }
 

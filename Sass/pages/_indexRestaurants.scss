@@ -36,7 +36,7 @@
             grid-area: 1/4/3/5;
             @include full-center;
             border: none;
-            @include heart (24px);
+            @include heart (24px !important);
             &full{
                 grid-area: 1/4/3/5;
                 @include full-center;
