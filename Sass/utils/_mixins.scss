@@ -1,0 +1,25 @@
+@mixin font-import($family, $source, $weight){
+    @font-face {
+        font-family:$family;
+        src: url($source);
+        font-weight: $weight;
+    }
+}
+@mixin full-center {
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin heart ($size) {
+    clip-path: url(#HeartEmpty);
+    background:black;
+    height:$size;
+    width:$size;
+    &:hover{
+        background: linear-gradient(180deg, rgba(147,86,220,1) 50%, rgba(255,121,218,1) 100%);
+        clip-path:url(#HeartFill);
+        height: $size;
+        width:$size;}
+}

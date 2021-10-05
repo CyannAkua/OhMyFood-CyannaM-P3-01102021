@@ -1,0 +1,74 @@
+.restaurants{
+    background-color: #f6f6f6;
+    padding: 40px 0 60px 0;
+    h2{
+        font-size: 24px;
+        padding:0 0 20px 24px;
+    }
+    &Cards{
+        display:grid;
+        grid-template-rows: repeat(4,1fr);
+        gap:30px;
+    }
+}
+.restaurantCard{
+    display:grid;
+    margin: 0 20px;
+    grid-template-rows: 150px 70px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow:$shadow;
+    &:hover{cursor:pointer !important}
+    &Txt{
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-content: center;
+        align-items: center;
+        padding: 10px;
+        line-height: 10px;
+        color:black;
+        width:100%;
+        h3 {grid-area:1/1/2/5}
+        p {grid-area:2/1/3/4}
+        button{
+            grid-area: 1/4/3/5;
+            @include full-center;
+            border: none;
+            @include heart (24px);
+        }
+    }
+    &ImgHold{position:relative}
+
+}
+.restaurantMainCardImg{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+.restaurantNew {
+    position:relative;
+    background-color:$tiercary-color;
+    color:darken($tiercary-color,30%);
+    border-radius:3px;
+    z-index: 1001;
+    float: right;
+    margin-left: -80px;
+    right: 40px;
+    top:20px;
+    height:30px;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+}
+@media (min-width:950px){
+    .restaurantName{
+        grid-column: 1/3}
+    .restaurantsCards{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,21 +1,15 @@
-@mixin font-import($font-family, $source, $weight){
-    @font-face {
-        font-family:$font-family;
-        src: url($source);
-        font-weight: $weight;
-    }
-}
 @include font-import(Roboto, '../font/Roboto-Regular.ttf', normal);
 @include font-import(Roboto, '../font/Roboto-Thin.ttf', 300);
 @include font-import(Roboto, '../font/Roboto-Bold.ttf', bold);
 @include font-import(RobotoMed, '../font/Roboto-Medium.ttf', 500);
 @include font-import(Shrikhand, '../font/Shrikhand-Regular.tff', normal);
-body{
+*{
     margin: 0;
     font-family: Roboto, Shrikhand, sans-serif;
     text-decoration: none;
     &:active {text-decoration:none}
-    &:visited{text-decoration:none}
+    &:visited{text-decoration:none;}
     &:link{text-decoration:none}
     &:hover{cursor: default;}
+    &:focus{outline:none}
 }
