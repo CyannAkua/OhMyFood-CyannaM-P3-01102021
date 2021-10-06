@@ -546,6 +546,7 @@ footer svg {
   -webkit-clip-path: url(#HeartFill);
           clip-path: url(#HeartFill);
   background: none;
+  overflow: hidden;
 }
 
 .restaurantCardTxt .heartfull {
@@ -802,6 +803,7 @@ footer svg {
   -webkit-clip-path: url(#HeartFill);
           clip-path: url(#HeartFill);
   background: none;
+  overflow: hidden;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;

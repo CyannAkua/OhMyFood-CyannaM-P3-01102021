@@ -5,6 +5,7 @@
     width:$size;
     clip-path: url(#HeartFill);
     background: none;
+    overflow:hidden;
     &full{
         clip-path: url(#HeartEmpty);
         background:black;
