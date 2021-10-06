@@ -29,30 +29,36 @@
   font-weight: normal;
 }
 
-* {
+body {
   margin: 0;
   font-family: Roboto, Shrikhand, sans-serif;
   text-decoration: none;
 }
 
-*:active {
+body:active {
   text-decoration: none;
 }
 
-*:visited {
+body:visited {
   text-decoration: none;
 }
 
-*:link {
+body:link {
   text-decoration: none;
 }
 
-*:hover {
+body:hover {
   cursor: default;
 }
 
-*:focus {
+body:focus {
   outline: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #353535;
+  z-index: 999;
 }
 
 .LoadingPage {
@@ -218,8 +224,12 @@ article:hover > .checkBox svg {
 }
 
 .HeaderLogo {
+  position: relative;
   text-align: center;
   padding: 6px 0 6px;
+  -webkit-box-shadow: 0px 5px 5px -5px #00000050;
+          box-shadow: 0px 5px 5px -5px #00000050;
+  background-color: white;
 }
 
 .CitySearch {
@@ -243,8 +253,6 @@ article:hover > .checkBox svg {
   text-align: center;
   background-color: #EAEAEA;
   height: 60px;
-  -webkit-box-shadow: inset 0px 3px 3px #CECECE;
-          box-shadow: inset 0px 3px 3px #CECECE;
 }
 
 .CitySearch svg {
@@ -314,7 +322,8 @@ article:hover > .checkBox svg {
   padding: 13px 0 26px;
 }
 
-.HeaderText button {
+.HeaderText div {
+  display: inline-block;
   width: 240px;
   height: 50px;
   border-radius: 25px;
@@ -324,13 +333,22 @@ article:hover > .checkBox svg {
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-box-shadow: 0px 3px 5px 0 #00000050;
           box-shadow: 0px 3px 5px 0 #00000050;
+  line-height: 50px;
   font-size: 16px;
   margin-bottom: 14px;
 }
 
+header {
+  background-color: white;
+}
+
 .headerNav {
+  position: relative;
+  z-index: 1001;
   text-align: center;
   padding: 6px 0 6px;
+  -webkit-box-shadow: 0px 5px 5px -5px black;
+          box-shadow: 0px 5px 5px -5px black;
 }
 
 .headerNav svg {
@@ -372,6 +390,7 @@ footer svg {
 }
 
 .fonctionnement {
+  background-color: white;
   padding: 30px 10px;
 }
 
@@ -486,6 +505,18 @@ footer svg {
   cursor: pointer !important;
 }
 
+.restaurantCard:active {
+  text-decoration: none !important;
+}
+
+.restaurantCard:visited {
+  text-decoration: none !important;
+}
+
+.restaurantCard:link {
+  text-decoration: none !important;
+}
+
 .restaurantCardTxt {
   display: -ms-grid;
   display: grid;
@@ -498,8 +529,8 @@ footer svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
-  line-height: 10px;
+  padding: 16px;
+  line-height: 0px;
   color: black;
   width: 100%;
 }
@@ -625,8 +656,8 @@ footer svg {
   top: 20px;
   height: 30px;
   width: 80px;
+  line-height: 0px;
   text-align: center;
-  line-height: 30px;
 }
 
 .restaurantCard3 .restaurantNew, .restaurantCard4 .restaurantNew {
@@ -658,15 +689,25 @@ footer svg {
       align-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  justify-items: center;
   position: relative;
   margin-top: -50px;
   padding: 30px 10px 0px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background: white;
+  background-color: #F6F6F6;
 }
 
-.restaurantsName i {
+.restaurantsName .heart {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 30px;
+  width: 30;
+  margin: 10px;
+}
+
+.restaurantsName .heartfull {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -677,6 +718,7 @@ footer svg {
 
 .menusPage {
   padding-bottom: 30px;
+  background-color: #F6F6F6;
 }
 
 .menusPage h3 {

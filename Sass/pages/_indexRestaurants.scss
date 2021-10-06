@@ -20,14 +20,17 @@
     overflow: hidden;
     box-shadow:$shadow;
     &:hover{cursor:pointer !important}
+    &:active {text-decoration:none !important}
+    &:visited{text-decoration:none !important}
+    &:link{text-decoration:none !important}
     &Txt{
         display: grid;
         grid-template-columns:repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
         align-content: center;
         align-items: center;
-        padding: 10px;
-        line-height: 10px;
+        padding: 16px;
+        line-height: 0px;
         color:black;
         width:100%;
         h3 {grid-area:1/1/2/5}
@@ -64,8 +67,8 @@
     top:20px;
     height:30px;
     width: 80px;
+    line-height: 0px;
     text-align: center;
-    line-height: 30px;
 }
 .restaurantCard3,.restaurantCard4 {
     .restaurantNew{

@@ -3,7 +3,7 @@
 @include font-import(Roboto, '../font/Roboto-Bold.ttf', bold);
 @include font-import(RobotoMed, '../font/Roboto-Medium.ttf', 500);
 @include font-import(Shrikhand, '../font/Shrikhand-Regular.ttf', normal);
-*{
+body{
     margin: 0;
     font-family: Roboto, Shrikhand, sans-serif;
     text-decoration: none;
@@ -12,4 +12,8 @@
     &:link{text-decoration:none}
     &:hover{cursor: default;}
     &:focus{outline:none}
+}
+body {
+    height: 100vh;
+    background-color:$darkgrey;
 }
