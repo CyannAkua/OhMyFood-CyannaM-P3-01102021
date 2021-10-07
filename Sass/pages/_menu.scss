@@ -17,13 +17,12 @@
         background-color: #F6F6F6;
         .heart{
             align-self: center;
-            height: 30px;
-            width:30;
+            @include heart (26px !important);
+            grid-area:1/2/2/3;
             margin:10px;
             &full{
+                grid-area:1/2/2/3;
                 align-self: center;
-                height: 30px;
-                width:30;
                 margin:10px;
             }
         }
@@ -32,6 +31,8 @@
   .menusPage{
       padding-bottom:30px;
       background-color:#F6F6F6;
+      display: grid;
+      grid-template-rows: repeat(5, auto);
       h3{
           overflow: hidden;
           text-overflow: ellipsis;
@@ -84,21 +85,15 @@
       }
 }
 .desserts{padding-bottom: 30px;}
-.commander {
+.commanderButton {
     @include grad-button(25px,50px);
+    @include full-center;
+    display: block;
+    line-height: 50px;
     font-size: 16px;
     font-family: RobotoMed;
     cursor: pointer !important;
     width: 65%;
-    &Button {
-        display:flex;
-        justify-content: center;
-    }
-}
-.restaurantsName .heart{
-    @include heart(26px !important);
-    grid-area:1/2/2/3;
-    &full{grid-area:1/2/2/3}
 }
 @media (min-width: 950px) {
     .menusPage {

@@ -4,53 +4,43 @@
   src: url("../font/Roboto-Regular.ttf");
   font-weight: normal;
 }
-
 @font-face {
   font-family: Roboto;
   src: url("../font/Roboto-Thin.ttf");
   font-weight: 300;
 }
-
 @font-face {
   font-family: Roboto;
   src: url("../font/Roboto-Bold.ttf");
   font-weight: bold;
 }
-
 @font-face {
   font-family: RobotoMed;
   src: url("../font/Roboto-Medium.ttf");
   font-weight: 500;
 }
-
 @font-face {
   font-family: Shrikhand;
   src: url("../font/Shrikhand-Regular.ttf");
   font-weight: normal;
 }
-
 body {
   margin: 0;
   font-family: Roboto, Shrikhand, sans-serif;
   text-decoration: none;
 }
-
 body:active {
   text-decoration: none;
 }
-
 body:visited {
   text-decoration: none;
 }
-
 body:link {
   text-decoration: none;
 }
-
 body:hover {
   cursor: default;
 }
-
 body:focus {
   outline: none;
 }
@@ -58,43 +48,19 @@ body:focus {
 body {
   height: 100vh;
   background-color: #353535;
-  z-index: 999;
 }
 
 .LoadingPage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: fixed;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   height: 0%;
   width: 0%;
   z-index: 1002;
   background-color: #f6f6f6;
-  -webkit-animation: LoadingPageVisibility 4s ease-in 0s 1;
-          animation: LoadingPageVisibility 4s ease-in 0s 1;
-}
-
-@-webkit-keyframes LoadingPageVisibility {
-  0% {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-  }
+  animation: LoadingPageVisibility 4s ease-in 0s 1;
 }
 
 @keyframes LoadingPageVisibility {
@@ -112,7 +78,6 @@ body {
     width: 100%;
   }
 }
-
 .LoadingLogo {
   display: block;
   position: fixed;
@@ -121,40 +86,21 @@ body {
   border: 20px solid #9356dc;
   border-right: 20px solid transparent;
   border-radius: 50%;
-  -webkit-animation: LoadingLogoAnim 1.5s ease-in-out 0s 3;
-          animation: LoadingLogoAnim 1.5s ease-in-out 0s 3;
-}
-
-@-webkit-keyframes LoadingLogoAnim {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    height: 100px;
-    width: 100px;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    height: 100px;
-    width: 100px;
-  }
+  animation: LoadingLogoAnim 1.5s ease-in-out 0s 3;
 }
 
 @keyframes LoadingLogoAnim {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     height: 100px;
     width: 100px;
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
     height: 100px;
     width: 100px;
   }
 }
-
 .checkBox {
   opacity: 1;
   position: relative;
@@ -165,126 +111,83 @@ body {
   background-color: #99e2d0;
   padding: 30px;
   margin-right: -200px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 11;
-  -ms-grid-column-span: 1;
   grid-area: 1/11/3/12;
   left: 10px;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 article:hover > .checkBox {
   right: 0;
   margin-right: 0;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 article:hover > .checkBox svg {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: 1s;
+  transform: rotate(360deg);
   transition: 1s;
 }
 
-.entréeCard:nth-of-type(1), .platCard:nth-of-type(1), .dessertsCard:nth-of-type(1) {
-  -webkit-animation: CardPopUp 2s linear 1 3s;
-          animation: CardPopUp 2s linear 1 3s;
+.entrées article:nth-of-type(1), .plats article:nth-of-type(1), .desserts article:nth-of-type(1) {
+  animation: CardPopUp 2s ease-in-out 1 3s;
 }
-
-.entréeCard:nth-of-type(2), .platCard:nth-of-type(2), .dessertsCard:nth-of-type(2) {
-  -webkit-animation: CardPopUp 3s linear 1 3s;
-          animation: CardPopUp 3s linear 1 3s;
+.entrées article:nth-of-type(2), .plats article:nth-of-type(2), .desserts article:nth-of-type(2) {
+  animation: CardPopUp 3s ease-in-out 1 3s;
 }
-
-.entréeCard:nth-of-type(3), .platCard:nth-of-type(3), .dessertsCard:nth-of-type(3) {
-  -webkit-animation: CardPopUp 4s linear 1 3s;
-          animation: CardPopUp 4s linear 1 3s;
+.entrées article:nth-of-type(3), .plats article:nth-of-type(3), .desserts article:nth-of-type(3) {
+  animation: CardPopUp 4s ease-in-out 1 3s;
 }
-
-.entréeCard:nth-of-type(4), .platCard:nth-of-type(4), .dessertsCard:nth-of-type(4) {
-  -webkit-animation: CardPopUp 5s linear 1 3s;
-          animation: CardPopUp 5s linear 1 3s;
-}
-
-@-webkit-keyframes CardPopUp {
-  from {
-    opacity: 0;
-    margin-top: 20px;
-  }
+.entrées article:nth-of-type(4), .plats article:nth-of-type(4), .desserts article:nth-of-type(4) {
+  animation: CardPopUp 5s ease-in-out 1 3s;
 }
 
 @keyframes CardPopUp {
-  from {
+  0% {
     opacity: 0;
     margin-top: 20px;
   }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
-
 .HeaderLogo {
   position: relative;
   text-align: center;
   padding: 6px 0 6px;
-  -webkit-box-shadow: 0px 5px 5px -5px #00000050;
-          box-shadow: 0px 5px 5px -5px #00000050;
+  box-shadow: 0px 5px 5px -5px #00000050;
   background-color: white;
 }
 
 .CitySearch {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 10px 0;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: wrap row;
-          flex-flow: wrap row;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-flow: wrap row;
+  align-content: center;
   justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #EAEAEA;
   height: 60px;
 }
-
 .CitySearch svg {
   color: #353535;
   height: 18px;
   margin-right: -20px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 .CitySearch input {
   background-color: transparent;
   border: none;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: RobotoMed;
   color: #353535;
@@ -294,34 +197,22 @@ article:hover > .checkBox svg {
 
 .HeaderText {
   background-color: #F6F6F6;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 40px 40px 40px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 .HeaderText h1 {
   font-size: 24px;
 }
-
 .HeaderText p {
   font-size: 18px;
   font-weight: 300;
   padding: 13px 0 26px;
 }
-
 .HeaderText div {
   display: inline-block;
   width: 240px;
@@ -329,10 +220,8 @@ article:hover > .checkBox svg {
   border-radius: 25px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-box-shadow: 0px 3px 5px 0 #00000050;
-          box-shadow: 0px 3px 5px 0 #00000050;
+  box-shadow: 0px 3px 5px 0 #00000050;
   line-height: 50px;
   font-size: 16px;
   margin-bottom: 14px;
@@ -347,10 +236,8 @@ header {
   z-index: 1001;
   text-align: center;
   padding: 6px 0 6px;
-  -webkit-box-shadow: 0px 5px 5px -5px black;
-          box-shadow: 0px 5px 5px -5px black;
+  box-shadow: 0px 5px 5px -5px black;
 }
-
 .headerNav svg {
   float: left;
   font-size: 26px;
@@ -359,10 +246,8 @@ header {
   color: #353535;
   cursor: pointer;
 }
-
 .headerPic {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-height: 50px;
   max-height: 400px;
   width: 100%;
@@ -376,15 +261,13 @@ footer {
   font-size: 14px;
   line-height: 24px;
 }
-
 footer svg {
   padding-right: 10px;
   width: 14px !important;
 }
 
 .footerLogoImg {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
   height: 16px;
   padding-bottom: 10px;
 }
@@ -393,45 +276,29 @@ footer svg {
   background-color: white;
   padding: 30px 10px;
 }
-
 .fonctionnement h2 {
   padding-left: 10px;
   font-size: 24px;
 }
-
 .fonctionnement h3 {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15px 30px auto;
-      grid-template-columns: 15px 30px auto;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: 15px 30px auto;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
   height: 40px;
   font-size: 16px;
   padding: 10px;
   margin: 20px 10px;
   border-radius: 20px;
   background-color: #f6f6f6;
-  -webkit-box-shadow: 0px 0px 15px -5px #00000050;
-          box-shadow: 0px 0px 15px -5px #00000050;
+  box-shadow: 0px 0px 15px -5px #00000050;
 }
-
 .fonctionnement i {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   color: white;
   font-size: 12px;
   font-style: normal;
@@ -443,202 +310,132 @@ footer svg {
   width: 20px;
   margin-left: -20px;
 }
-
 .fonctionnement svg {
   color: #353535;
   height: 16px;
   width: 16px !important;
 }
-
 .fonctionnement3 {
   background-color: #F5EDFF !important;
 }
-
 .fonctionnement .fa-store {
   color: #9356DC;
 }
 
 @media (min-width: 950px) {
   .fonctionnement div {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .fonctionnement div h3 {
     width: 80%;
   }
 }
-
 .restaurants {
   background-color: #f6f6f6;
   padding: 40px 0 60px 0;
 }
-
 .restaurants h2 {
   font-size: 24px;
   padding: 0 0 20px 24px;
 }
-
 .restaurantsCards {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 30px;
 }
 
 .restaurantCard {
-  display: -ms-grid;
   display: grid;
   margin: 0 20px;
-  -ms-grid-rows: 150px 70px;
-      grid-template-rows: 150px 70px;
+  grid-template-rows: 150px 70px;
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 15px -5px #00000050;
-          box-shadow: 0px 0px 15px -5px #00000050;
+  box-shadow: 0px 0px 15px -5px #00000050;
 }
-
 .restaurantCard:hover {
   cursor: pointer !important;
 }
-
 .restaurantCard:active {
   text-decoration: none !important;
 }
-
 .restaurantCard:visited {
   text-decoration: none !important;
 }
-
 .restaurantCard:link {
   text-decoration: none !important;
 }
-
 .restaurantCardTxt {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-content: center;
+  align-items: center;
   padding: 16px;
   line-height: 0px;
   color: black;
   width: 100%;
 }
-
 .restaurantCardTxt h3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: 1/1/2/5;
 }
-
 .restaurantCardTxt p {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: 2/1/3/4;
 }
-
 .restaurantCardTxt .heart {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
   grid-area: 1/4/3/5;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border: none;
-  -webkit-clip-path: url(#HeartEmpty);
-          clip-path: url(#HeartEmpty);
+  clip-path: url(#HeartEmpty);
   background: black;
   height: 24px !important;
   width: 24px !important;
-  -webkit-clip-path: url(#HeartFill);
-          clip-path: url(#HeartFill);
+  clip-path: url(#HeartFill);
   background: none;
   overflow: hidden;
 }
-
 .restaurantCardTxt .heartfull {
-  -webkit-clip-path: url(#HeartEmpty);
-          clip-path: url(#HeartEmpty);
+  clip-path: url(#HeartEmpty);
   background: black;
   opacity: 1;
   height: 24px !important;
   width: 24px !important;
 }
-
 .restaurantCardTxt .heart .filling {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-clip-path: url(#HeartFill);
-          clip-path: url(#HeartFill);
+  clip-path: url(#HeartFill);
   height: 24px !important;
   width: 24px !important;
   margin-top: 24px !important;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .restaurantCardTxt .heart:hover > .filling {
-  -webkit-transition: 1s;
   transition: 1s;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-clip-path: url(#HeartFill);
-          clip-path: url(#HeartFill);
+  clip-path: url(#HeartFill);
   height: 24px !important;
   width: 24px !important;
   margin-top: 0 !important;
 }
-
 .restaurantCardTxt .heartfull {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
   grid-area: 1/4/3/5;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 .restaurantCardImgHold {
   position: relative;
 }
 
 .restaurantMainCardImg {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -666,29 +463,20 @@ footer svg {
 
 @media (min-width: 950px) {
   .restaurantsCards {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 .restaurantName {
   font-family: Shrikhand;
   margin: 10px;
 }
-
 .restaurantsName {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 30px;
-      grid-template-columns: auto 30px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  grid-template-columns: auto 30px;
+  align-content: center;
+  justify-content: space-around;
   justify-items: center;
   position: relative;
   margin-top: -50px;
@@ -697,109 +485,98 @@ footer svg {
   border-top-right-radius: 30px;
   background-color: #F6F6F6;
 }
-
 .restaurantsName .heart {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: 30px;
-  width: 30;
+  align-self: center;
+  clip-path: url(#HeartEmpty);
+  background: black;
+  height: 26px !important;
+  width: 26px !important;
+  clip-path: url(#HeartFill);
+  background: none;
+  overflow: hidden;
+  grid-area: 1/2/2/3;
   margin: 10px;
 }
-
 .restaurantsName .heartfull {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  height: 30px;
-  width: 30;
+  clip-path: url(#HeartEmpty);
+  background: black;
+  opacity: 1;
+  height: 26px !important;
+  width: 26px !important;
+}
+.restaurantsName .heart .filling {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  clip-path: url(#HeartFill);
+  height: 26px !important;
+  width: 26px !important;
+  margin-top: 26px !important;
+  transition: 1s;
+}
+.restaurantsName .heart:hover > .filling {
+  transition: 1s;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  clip-path: url(#HeartFill);
+  height: 26px !important;
+  width: 26px !important;
+  margin-top: 0 !important;
+}
+.restaurantsName .heartfull {
+  grid-area: 1/2/2/3;
+  align-self: center;
   margin: 10px;
 }
 
 .menusPage {
   padding-bottom: 30px;
   background-color: #F6F6F6;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
 }
-
 .menusPage h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-
 .menusPage p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 80%;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
-
 .menusPage article {
-  display: -ms-grid;
   display: grid;
   overflow: hidden;
-  -ms-grid-columns: (1fr)[10] auto;
-      grid-template-columns: repeat(10, 1fr) auto;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(10, 1fr) auto;
+  grid-template-rows: repeat(2, 1fr);
   margin: 0 10px;
   padding: 0 10px;
   border-radius: 20px;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 15px -5px #00000050;
-          box-shadow: 0px 0px 15px -5px #00000050;
+  box-shadow: 0px 0px 15px -5px #00000050;
   height: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .menusPage article h3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 10;
   grid-area: 1/1/2/11;
 }
-
 .menusPage article p {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 9;
   grid-area: 2/1/3/10;
 }
-
 .menusPage article strong {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 10;
-  -ms-grid-column-span: 1;
   grid-area: 2/10/3/11;
-  -ms-grid-column-align: right;
-      justify-self: right;
+  justify-self: right;
 }
 
 .entrées, .plats, .desserts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  flex-flow: column;
 }
-
 .entrées h2, .plats h2, .desserts h2 {
   margin-bottom: -10px;
   padding: 20px 0 8px 10px;
@@ -811,143 +588,58 @@ footer svg {
   padding-bottom: 30px;
 }
 
-.commander {
+.commanderButton {
   width: 25px;
   height: 50px;
   border-radius: 25px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-box-shadow: 0px 3px 5px 0 #00000050;
-          box-shadow: 0px 3px 5px 0 #00000050;
+  box-shadow: 0px 3px 5px 0 #00000050;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  line-height: 50px;
   font-size: 16px;
   font-family: RobotoMed;
   cursor: pointer !important;
   width: 65%;
 }
 
-.commanderButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.restaurantsName .heart {
-  -webkit-clip-path: url(#HeartEmpty);
-          clip-path: url(#HeartEmpty);
-  background: black;
-  height: 26px !important;
-  width: 26px !important;
-  -webkit-clip-path: url(#HeartFill);
-          clip-path: url(#HeartFill);
-  background: none;
-  overflow: hidden;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1/2/2/3;
-}
-
-.restaurantsName .heartfull {
-  -webkit-clip-path: url(#HeartEmpty);
-          clip-path: url(#HeartEmpty);
-  background: black;
-  opacity: 1;
-  height: 26px !important;
-  width: 26px !important;
-}
-
-.restaurantsName .heart .filling {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-clip-path: url(#HeartFill);
-          clip-path: url(#HeartFill);
-  height: 26px !important;
-  width: 26px !important;
-  margin-top: 26px !important;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.restaurantsName .heart:hover > .filling {
-  -webkit-transition: 1s;
-  transition: 1s;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
-  -webkit-clip-path: url(#HeartFill);
-          clip-path: url(#HeartFill);
-  height: 26px !important;
-  width: 26px !important;
-  margin-top: 0 !important;
-}
-
-.restaurantsName .heartfull {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1/2/2/3;
-}
-
 @media (min-width: 950px) {
   .menusPage {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (auto)[3];
-        grid-template-rows: repeat(3, auto);
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
+
   .restaurantName {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: 1/1/2/3;
   }
   .restaurantsName {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: 1 / 1 / 2 / 4;
-    display: -ms-grid;
+    grid-area: 1/1/2/4;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
     justify-items: center;
   }
   .restaurantsName .heart {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
     grid-area: 1/3/2/4;
   }
   .restaurantsName .heartfull {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
     grid-area: 1/3/2/4;
   }
+
   .commanderButton {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-area: 3/2/4/3;
   }
 }
-
 u {
   text-decoration: none;
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 4px;
 }
+
 /*# sourceMappingURL=style.css.map */
