@@ -127,16 +127,16 @@ article:hover > .checkBox svg {
 }
 
 .entrées article:nth-of-type(1), .plats article:nth-of-type(1), .desserts article:nth-of-type(1) {
-  animation: CardPopUp 2s ease-in-out 1 3s;
+  animation: CardPopUp 3s ease-in 1 3s forwards;
 }
 .entrées article:nth-of-type(2), .plats article:nth-of-type(2), .desserts article:nth-of-type(2) {
-  animation: CardPopUp 3s ease-in-out 1 3s;
+  animation: CardPopUp 4s ease-in 1 3s forwards;
 }
 .entrées article:nth-of-type(3), .plats article:nth-of-type(3), .desserts article:nth-of-type(3) {
-  animation: CardPopUp 4s ease-in-out 1 3s;
+  animation: CardPopUp 5s ease-in 1 3s forwards;
 }
 .entrées article:nth-of-type(4), .plats article:nth-of-type(4), .desserts article:nth-of-type(4) {
-  animation: CardPopUp 5s ease-in-out 1 3s;
+  animation: CardPopUp 6s ease-in 1 3s forwards;
 }
 
 @keyframes CardPopUp {
