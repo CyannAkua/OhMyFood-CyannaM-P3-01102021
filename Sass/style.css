@@ -126,16 +126,24 @@ article:hover > .checkBox svg {
   transition: 1s;
 }
 
-.entrées article:nth-of-type(0n+1), .plats article:nth-of-type(0n+1), .desserts article:nth-of-type(0n+1) {
+.entrées article:nth-of-type(0n + 1),
+.plats article:nth-of-type(0n + 1),
+.desserts article:nth-of-type(0n + 1) {
   animation: CardPopUp 3s ease-in 1 3s forwards;
 }
-.entrées article:nth-of-type(0n+2), .plats article:nth-of-type(0n+2), .desserts article:nth-of-type(0n+2) {
+.entrées article:nth-of-type(0n + 2),
+.plats article:nth-of-type(0n + 2),
+.desserts article:nth-of-type(0n + 2) {
   animation: CardPopUp 3.5s ease-in 1 3s forwards;
 }
-.entrées article:nth-of-type(0n+3), .plats article:nth-of-type(0n+3), .desserts article:nth-of-type(0n+3) {
+.entrées article:nth-of-type(0n + 3),
+.plats article:nth-of-type(0n + 3),
+.desserts article:nth-of-type(0n + 3) {
   animation: CardPopUp 4s ease-in 1 3s forwards;
 }
-.entrées article:nth-of-type(0n+4), .plats article:nth-of-type(0n+4), .desserts article:nth-of-type(0n+4) {
+.entrées article:nth-of-type(0n + 4),
+.plats article:nth-of-type(0n + 4),
+.desserts article:nth-of-type(0n + 4) {
   animation: CardPopUp 4.5s ease-in 1 3s forwards;
 }
 
@@ -168,7 +176,7 @@ article:hover > .checkBox svg {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   height: 60px;
 }
 .CitySearch svg {
@@ -196,7 +204,7 @@ article:hover > .checkBox svg {
 }
 
 .HeaderText {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   flex-direction: column;
   padding: 40px 40px 40px;
   align-content: center;
@@ -220,7 +228,7 @@ article:hover > .checkBox svg {
   border-radius: 25px;
   border: none;
   color: white;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   box-shadow: 0px 3px 5px 0 #00000050;
   line-height: 50px;
   font-size: 16px;
@@ -304,7 +312,7 @@ footer svg {
   font-style: normal;
   font-weight: normal;
   line-height: 20px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -316,10 +324,10 @@ footer svg {
   width: 16px !important;
 }
 .fonctionnement3 {
-  background-color: #F5EDFF !important;
+  background-color: #f5edff !important;
 }
 .fonctionnement .fa-store {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 @media (min-width: 950px) {
@@ -407,7 +415,7 @@ footer svg {
   width: 24px !important;
 }
 .restaurantCardTxt .heart .filling {
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   clip-path: url(#HeartFill);
   height: 24px !important;
   width: 24px !important;
@@ -416,7 +424,7 @@ footer svg {
 }
 .restaurantCardTxt .heart:hover > .filling {
   transition: 1s;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   clip-path: url(#HeartFill);
   height: 24px !important;
   width: 24px !important;
@@ -443,7 +451,7 @@ footer svg {
 
 .restaurantNew {
   position: relative;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #32b091;
   border-radius: 3px;
   z-index: 1001;
@@ -457,7 +465,8 @@ footer svg {
   text-align: center;
 }
 
-.restaurantCard3 .restaurantNew, .restaurantCard4 .restaurantNew {
+.restaurantCard3 .restaurantNew,
+.restaurantCard4 .restaurantNew {
   opacity: 0;
 }
 
@@ -483,7 +492,7 @@ footer svg {
   padding: 30px 10px 0px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .restaurantsName .heart {
   align-self: center;
@@ -505,7 +514,7 @@ footer svg {
   width: 26px !important;
 }
 .restaurantsName .heart .filling {
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   clip-path: url(#HeartFill);
   height: 26px !important;
   width: 26px !important;
@@ -514,7 +523,7 @@ footer svg {
 }
 .restaurantsName .heart:hover > .filling {
   transition: 1s;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   clip-path: url(#HeartFill);
   height: 26px !important;
   width: 26px !important;
@@ -528,7 +537,7 @@ footer svg {
 
 .menusPage {
   padding-bottom: 30px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: grid;
   grid-template-rows: repeat(5, auto);
 }
@@ -572,12 +581,16 @@ footer svg {
   justify-self: right;
 }
 
-.entrées, .plats, .desserts {
+.entrées,
+.plats,
+.desserts {
   display: flex;
   gap: 20px;
   flex-flow: column;
 }
-.entrées h2, .plats h2, .desserts h2 {
+.entrées h2,
+.plats h2,
+.desserts h2 {
   margin-bottom: -10px;
   padding: 20px 0 8px 10px;
   font-weight: lighter;
@@ -594,7 +607,7 @@ footer svg {
   border-radius: 25px;
   border: none;
   color: white;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   box-shadow: 0px 3px 5px 0 #00000050;
   align-content: center;
   justify-self: center;
@@ -638,7 +651,7 @@ footer svg {
 }
 u {
   text-decoration: none;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   padding-bottom: 4px;
 }
 

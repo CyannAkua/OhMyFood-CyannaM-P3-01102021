@@ -1,13 +1,16 @@
-footer{
-    background-color:#353535;
-    color:white;
-    padding:24px 0px 24px 20px;
-    font-size: 14px;
-    line-height: 24px;
-    svg{padding-right: 10px;width: 14px !important;}
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 24px 0px 24px 20px;
+  font-size: 14px;
+  line-height: 24px;
+  svg {
+    padding-right: 10px;
+    width: 14px !important;
+  }
 }
-.footerLogoImg{
-    filter: invert(100%);
-    height: 16px;
-    padding-bottom:10px
+.footerLogoImg {
+  filter: invert(100%);
+  height: 16px;
+  padding-bottom: 10px;
 }

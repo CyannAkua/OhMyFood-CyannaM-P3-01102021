@@ -1,32 +1,32 @@
-@mixin heart ($size) {
+@mixin heart($size) {
+  clip-path: url(#HeartEmpty);
+  background: black;
+  height: $size;
+  width: $size;
+  clip-path: url(#HeartFill);
+  background: none;
+  overflow: hidden;
+  &full {
     clip-path: url(#HeartEmpty);
-    background:black;
-    height:$size;
-    width:$size;
+    background: black;
+    opacity: 1;
+    height: $size;
+    width: $size;
+  }
+  .filling {
+    background: linear-gradient(0deg, $primary-color, $secondary-color);
     clip-path: url(#HeartFill);
-    background: none;
-    overflow:hidden;
-    &full{
-        clip-path: url(#HeartEmpty);
-        background:black;
-        opacity: 1;
-        height:$size;
-        width:$size;
-    }
-    .filling{
-            background: linear-gradient(0deg, $primary-color, $secondary-color);
-            clip-path:url(#HeartFill);
-            height: $size;
-            width: $size;
-            margin-top: $size;
-            transition: 1s;
-        }
-    &:hover > .filling{
-        transition: 1s;
-        background: linear-gradient(0deg, $primary-color, $secondary-color);
-        clip-path:url(#HeartFill);
-        height: $size;
-        width: $size;
-        margin-top: 0!important;
-    }
-}   
+    height: $size;
+    width: $size;
+    margin-top: $size;
+    transition: 1s;
+  }
+  &:hover > .filling {
+    transition: 1s;
+    background: linear-gradient(0deg, $primary-color, $secondary-color);
+    clip-path: url(#HeartFill);
+    height: $size;
+    width: $size;
+    margin-top: 0 !important;
+  }
+}

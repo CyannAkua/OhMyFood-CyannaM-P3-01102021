@@ -1,25 +1,30 @@
-.entrées, .plats, .desserts {
-    article{
-        &:nth-of-type(0n+1) {
-            animation: CardPopUp 3s ease-in 1 3s forwards;}
-        &:nth-of-type(0n+2) {
-            animation: CardPopUp 3.5s ease-in 1 3s forwards;}
-        &:nth-of-type(0n+3) {
-            animation: CardPopUp 4s ease-in 1 3s forwards;}
-        &:nth-of-type(0n+4) {
-            animation: CardPopUp 4.5s ease-in 1 3s forwards;}
-    } 
-}
-  @keyframes CardPopUp {
-    0%{
-      opacity: 0;
-      margin-top: 20px;
+.entrées,
+.plats,
+.desserts {
+  article {
+    &:nth-of-type(0n + 1) {
+      animation: CardPopUp 3s ease-in 1 3s forwards;
     }
-    10%{
-        opacity: 0;
+    &:nth-of-type(0n + 2) {
+      animation: CardPopUp 3.5s ease-in 1 3s forwards;
     }
-    100%{ 
-        margin-top:0px;
+    &:nth-of-type(0n + 3) {
+      animation: CardPopUp 4s ease-in 1 3s forwards;
+    }
+    &:nth-of-type(0n + 4) {
+      animation: CardPopUp 4.5s ease-in 1 3s forwards;
     }
   }
-      
+}
+@keyframes CardPopUp {
+  0% {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
