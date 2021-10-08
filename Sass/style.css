@@ -112,7 +112,7 @@ body {
   padding: 30px;
   margin-right: -200px;
   grid-area: 1/11/3/12;
-  left: 10px;
+  left: 11px;
   transition: 1s;
 }
 
@@ -228,7 +228,7 @@ article:hover > .checkBox svg {
   border-radius: 25px;
   border: none;
   color: white;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   box-shadow: 0px 3px 5px 0 #00000050;
   line-height: 50px;
   font-size: 16px;
@@ -312,7 +312,7 @@ footer svg {
   font-style: normal;
   font-weight: normal;
   line-height: 20px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -327,7 +327,7 @@ footer svg {
   background-color: #f5edff !important;
 }
 .fonctionnement .fa-store {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 @media (min-width: 950px) {
@@ -415,7 +415,7 @@ footer svg {
   width: 24px !important;
 }
 .restaurantCardTxt .heart .filling {
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   clip-path: url(#HeartFill);
   height: 24px !important;
   width: 24px !important;
@@ -424,7 +424,7 @@ footer svg {
 }
 .restaurantCardTxt .heart:hover > .filling {
   transition: 1s;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   clip-path: url(#HeartFill);
   height: 24px !important;
   width: 24px !important;
@@ -451,7 +451,7 @@ footer svg {
 
 .restaurantNew {
   position: relative;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #32b091;
   border-radius: 3px;
   z-index: 1001;
@@ -514,7 +514,7 @@ footer svg {
   width: 26px !important;
 }
 .restaurantsName .heart .filling {
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   clip-path: url(#HeartFill);
   height: 26px !important;
   width: 26px !important;
@@ -523,7 +523,7 @@ footer svg {
 }
 .restaurantsName .heart:hover > .filling {
   transition: 1s;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   clip-path: url(#HeartFill);
   height: 26px !important;
   width: 26px !important;
@@ -607,7 +607,7 @@ footer svg {
   border-radius: 25px;
   border: none;
   color: white;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   box-shadow: 0px 3px 5px 0 #00000050;
   align-content: center;
   justify-self: center;
@@ -651,7 +651,7 @@ footer svg {
 }
 u {
   text-decoration: none;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid #99E2D0;
   padding-bottom: 4px;
 }
 
